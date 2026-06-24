@@ -29,5 +29,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0009-palindrome-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0009-palindrome-number) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3700-number-of-zigzag-arrays-ii) |
 <!---LeetCode Topics End-->
