@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0009-palindrome-number) |
+| [0172-factorial-trailing-zeroes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0172-factorial-trailing-zeroes) |
 | [0231-power-of-two](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0231-power-of-two) |
 | [0507-perfect-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0509-fibonacci-number) |
