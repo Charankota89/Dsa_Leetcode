@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
+| [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
@@ -45,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0009-palindrome-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0009-palindrome-number) |
 | [0172-factorial-trailing-zeroes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0172-factorial-trailing-zeroes) |
+| [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0231-power-of-two) |
 | [0507-perfect-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0509-fibonacci-number) |
@@ -86,9 +88,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Enumeration
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Greedy
 |  |
 | ------- |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+## Number Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
