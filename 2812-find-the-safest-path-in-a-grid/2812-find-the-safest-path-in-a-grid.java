@@ -1,56 +1,73 @@
+import java.util.*;
+
 class Solution {
-    int[][] dir = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
+    int n;
+    int[] dx = {-1, 1, 0, 0};
+    int[] dy = {0, 0, 1, -1};
 
-    public int maximumSafenessFactor(List<List<Integer>> mat) {
-        int n = mat.size();
+    public int maximumSafenessFactor(List<List<Integer>> grid) {
+        n = grid.size();
 
-        Queue<int[]> q = new ArrayDeque<>();
-        int[][] grid = new int[n][n];
+        Queue<int[]> q = new LinkedList<>();
+        int[][] dist = new int[n][n];
+        boolean[][] vis = new boolean[n][n];
 
-        // Collect all thief cells as BFS sources
-        // Time: O(n^2), Space: O(n^2)
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int val = mat.get(i).get(j);
-                grid[i][j] = val;
-                if (val == 1) q.offer(new int[]{i, j});
+        // Step 1: Push all thief cells
+        for (int r = 0; r < n; r++) {
+            for (int c = 0; c < n; c++) {
+                if (grid.get(r).get(c) == 1) {
+                    vis[r][c] = true;
+                    q.offer(new int[]{r, c});
+                }
             }
         }
 
-        // Multi-source BFS: compute min distance to nearest thief for every cell
+        // Multi-source BFS
         while (!q.isEmpty()) {
-            int[] curr = q.remove();
-            int x = curr[0], y = curr[1];
-            for (int i = 0; i < 4; i++) {
-                int r = x + dir[i][0];
-                int c = y + dir[i][1];
-                if (r < 0 || r >= n || c < 0 || c >= n || grid[r][c] > 0) continue;
-                grid[r][c] = grid[x][y] + 1;
-                q.offer(new int[]{r, c});
+            int[] curr = q.poll();
+            int r = curr[0], c = curr[1];
+
+            for (int d = 0; d < 4; d++) {
+                int nr = r + dx[d];
+                int nc = c + dy[d];
+
+                if (nr < 0 || nc < 0 || nr >= n || nc >= n) continue;
+                if (vis[nr][nc]) continue;
+
+                dist[nr][nc] = dist[r][c] + 1;
+                vis[nr][nc] = true;
+                q.offer(new int[]{nr, nc});
             }
         }
 
-        // Dijkstra: max-heap on safeness — find path from (0,0) to (n-1,n-1)
-        // that maximises the minimum safeness along the way
-        // Time: O(n^2 log n^2)
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
-        pq.offer(new int[]{grid[0][0], 0, 0});
-        grid[0][0] = -1; // Mark as visited
+        // Step 2: Max heap
+        PriorityQueue<int[]> store = new PriorityQueue<>(
+            (a, b) -> b[0] - a[0]
+        );
 
-        while (!pq.isEmpty()) {
-            int[] curr = pq.remove();
-            int sfac = curr[0], x = curr[1], y = curr[2];
+        boolean[][] vis2 = new boolean[n][n];
+        store.offer(new int[]{dist[0][0], 0, 0});
 
-            if (x == n - 1 && y == n - 1) return sfac - 1;
+        while (!store.isEmpty()) {
+            int[] curr = store.poll();
+            int safeE = curr[0];
+            int r = curr[1];
+            int c = curr[2];
 
-            for (int i = 0; i < 4; i++) {
-                int r = x + dir[i][0];
-                int c = y + dir[i][1];
-                if (r < 0 || r >= n || c < 0 || c >= n || grid[r][c] < 0) continue;
-                // Bottleneck: carry forward the minimum safeness on this path
-                int min = Math.min(sfac, grid[r][c]);
-                pq.offer(new int[]{min, r, c});
-                grid[r][c] = -1; // Mark as visited
+            if (vis2[r][c]) continue;
+            vis2[r][c] = true;
+
+            if (r == n - 1 && c == n - 1) return safeE;
+
+            for (int d = 0; d < 4; d++) {
+                int nr = r + dx[d];
+                int nc = c + dy[d];
+
+                if (nr < 0 || nc < 0 || nr >= n || nc >= n) continue;
+                if (vis2[nr][nc]) continue;
+
+                int newSafe = Math.min(safeE, dist[nr][nc]);
+                store.offer(new int[]{newSafe, nr, nc});
             }
         }
 
