@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
@@ -46,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 ## Topological Sort
 |  |
 | ------- |
