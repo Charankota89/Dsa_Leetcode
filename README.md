@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
+| [1288-remove-covered-intervals](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
+| [1288-remove-covered-intervals](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 ## Math
 |  |
