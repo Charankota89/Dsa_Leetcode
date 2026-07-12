@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0001-two-sum) |
+| [0014-longest-common-prefix](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0152-maximum-product-subarray](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0152-maximum-product-subarray) |
@@ -125,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0014-longest-common-prefix) |
 | [0125-valid-palindrome](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0125-valid-palindrome) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -194,4 +196,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Charankota89/Dsa_Leetcode/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Charankota89/Dsa_Leetcode/tree/master/2685-count-the-number-of-complete-components) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
