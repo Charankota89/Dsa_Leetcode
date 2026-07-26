@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1260-shift-2d-grid](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1331-rank-transform-of-an-array) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1288-remove-covered-intervals](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
@@ -83,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0231-power-of-two) |
 | [0507-perfect-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0509-fibonacci-number) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2235-add-two-integers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/2235-add-two-integers) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3312-sorted-gcd-pair-queries) |
