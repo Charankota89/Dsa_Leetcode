@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0152-maximum-product-subarray](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0509-fibonacci-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0509-fibonacci-number) |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1406-stone-game-iii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
@@ -17,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3699-number-of-zigzag-arrays-i](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3699-number-of-zigzag-arrays-i) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3737-count-subarrays-with-majority-element-i) |
@@ -35,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0204-count-primes) |
 | [0217-contains-duplicate](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0217-contains-duplicate) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1331-rank-transform-of-an-array) |
@@ -98,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0507-perfect-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0509-fibonacci-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1406-stone-game-iii) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2235-add-two-integers](https://github.com/Charankota89/Dsa_Leetcode/tree/master/2235-add-two-integers) |
@@ -299,9 +303,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Game Theory
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1406-stone-game-iii) |
 ## Backtracking
 |  |
 | ------- |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3348-smallest-divisible-digit-product-ii) |
+## Minimax
+|  |
+| ------- |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [1140-stone-game-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/1140-stone-game-ii) |
 <!---LeetCode Topics End-->
