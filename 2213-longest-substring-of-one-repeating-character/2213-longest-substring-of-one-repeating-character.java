@@ -1,81 +1,95 @@
 class Solution {
 
-    class Node {
-        char leftChar, rightChar;
-        int leftCount, rightCount, maxCount, length;
+    public int[] longestRepeating(
+        String s,
+        String queryCharacters,
+        int[] queryIndices
+    ) {
+        int n = s.length();
+        char[] arr = s.toCharArray();
+        TreeMap<Integer, Integer> segs = new TreeMap<>();
+        TreeMap<Integer, Integer> lens = new TreeMap<>();
 
-        Node(char c) {
-            leftChar = rightChar = c;
-            leftCount = rightCount = maxCount = 1;
-            length = 1;
+        for (int i = 0; i < n; ) {
+            int j = i;
+            while (j < n && arr[j] == arr[i]) {
+                j++;
+            }
+            segs.put(i, j - 1);
+            lens.put(j - i, lens.getOrDefault(j - i, 0) + 1);
+            i = j;
         }
-
-        Node() {}
-    }
-
-    Node[] seg;
-    int n;
-
-    public int[] longestRepeating(String s, String queryCharacters, int[] queryIndices) {
-        n = s.length();
-        seg = new Node[4 * n];
-
-        build(1, 0, n - 1, s.toCharArray());
 
         int k = queryIndices.length;
         int[] ans = new int[k];
 
-        for (int i = 0; i < k; i++) {
-            update(1, 0, n - 1, queryIndices[i], queryCharacters.charAt(i));
-            ans[i] = seg[1].maxCount;
+        for (int q = 0; q < k; q++) {
+            int pos = queryIndices[q];
+            char ch = queryCharacters.charAt(q);
+
+            if (arr[pos] != ch) {
+                int L = segs.floorKey(pos);
+                int R = segs.get(L);
+                segs.remove(L);
+                int oldLen = R - L + 1;
+                lens.put(oldLen, lens.get(oldLen) - 1);
+                if (lens.get(oldLen) == 0) {
+                    lens.remove(oldLen);
+                }
+
+                if (L <= pos - 1) {
+                    segs.put(L, pos - 1);
+                    int len1 = pos - L;
+                    lens.put(len1, lens.getOrDefault(len1, 0) + 1);
+                }
+                if (pos + 1 <= R) {
+                    segs.put(pos + 1, R);
+                    int len2 = R - pos;
+                    lens.put(len2, lens.getOrDefault(len2, 0) + 1);
+                }
+
+                int newL = pos,
+                    newR = pos;
+
+                Integer rightKey = segs.ceilingKey(pos + 1);
+                if (
+                    rightKey != null &&
+                    rightKey == pos + 1 &&
+                    arr[pos + 1] == ch
+                ) {
+                    int rightR = segs.get(rightKey);
+                    int rightLen = rightR - rightKey + 1;
+                    lens.put(rightLen, lens.get(rightLen) - 1);
+                    if (lens.get(rightLen) == 0) {
+                        lens.remove(rightLen);
+                    }
+                    newR = rightR;
+                    segs.remove(rightKey);
+                }
+
+                Integer leftKey = segs.floorKey(pos - 1);
+                if (leftKey != null) {
+                    int leftR = segs.get(leftKey);
+                    if (leftR == pos - 1 && arr[pos - 1] == ch) {
+                        int leftLen = leftR - leftKey + 1;
+                        lens.put(leftLen, lens.get(leftLen) - 1);
+                        if (lens.get(leftLen) == 0) {
+                            lens.remove(leftLen);
+                        }
+                        newL = leftKey;
+                        segs.remove(leftKey);
+                    }
+                }
+
+                segs.put(newL, newR);
+                int newLen = newR - newL + 1;
+                lens.put(newLen, lens.getOrDefault(newLen, 0) + 1);
+                arr[pos] = ch;
+            }
+
+            ans[q] = lens.lastKey();
         }
 
         return ans;
-    }
-
-    void build(int idx, int l, int r, char[] arr) {
-        if (l == r) {
-            seg[idx] = new Node(arr[l]);
-            return;
-        }
-        int mid = (l + r) / 2;
-        build(idx * 2, l, mid, arr);
-        build(idx * 2 + 1, mid + 1, r, arr);
-        seg[idx] = merge(seg[idx * 2], seg[idx * 2 + 1]);
-    }
-
-    void update(int idx, int l, int r, int pos, char c) {
-        if (l == r) {
-            seg[idx] = new Node(c);
-            return;
-        }
-        int mid = (l + r) / 2;
-        if (pos <= mid)
-            update(idx * 2, l, mid, pos, c);
-        else
-            update(idx * 2 + 1, mid + 1, r, pos, c);
-
-        seg[idx] = merge(seg[idx * 2], seg[idx * 2 + 1]);
-    }
-
-    Node merge(Node a, Node b) {
-        Node res = new Node();
-        res.length = a.length + b.length;
-        res.leftChar = a.leftChar;
-        res.rightChar = b.rightChar;
-
-        res.leftCount = a.leftCount;
-        if (a.leftCount == a.length && a.rightChar == b.leftChar)
-            res.leftCount += b.leftCount;
-
-        res.rightCount = b.rightCount;
-        if (b.rightCount == b.length && a.rightChar == b.leftChar)
-            res.rightCount += a.rightCount;
-
-        res.maxCount = Math.max(a.maxCount, b.maxCount);
-        if (a.rightChar == b.leftChar)
-            res.maxCount = Math.max(res.maxCount, a.rightCount + b.leftCount);
-
-        return res;
     }
 }
