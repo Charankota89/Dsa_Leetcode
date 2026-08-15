@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0088-merge-sorted-array) |
+| [0136-single-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0136-single-number) |
 | [0152-maximum-product-subarray](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0169-majority-element) |
@@ -172,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0136-single-number) |
 | [0231-power-of-two](https://github.com/Charankota89/Dsa_Leetcode/tree/master/0231-power-of-two) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Charankota89/Dsa_Leetcode/tree/master/3514-number-of-unique-xor-triplets-ii) |
