@@ -1,30 +1,34 @@
 class Solution {
     public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {
-        int[] diff = new int[100001];
-        // maximum difference can be 100000-0=100000
-        long total_diff=0;
-        int max=0;
-        for(int i=0 ; i<nums1.length ; i++){
-           int x = Math.abs(nums1[i]-nums2[i]);
-           diff[x]++;
-           total_diff += x;
-           max = Math.max(max,x);
+        int operations = k1 + k2;
+        int n = nums1.length;
+        int[] map = new int[(int) 1e5 + 1];
+        
+        for (int i = 0; i < n; i++) {
+            int x = Math.abs(nums1[i] - nums2[i]);
+            map[x]++;
         }
-        long ans=0;
-        k1+=k2;
-        if(total_diff<=k1) return 0;
-        for(int i=max ; i>0 && k1>0 ; i--){
-            if(diff[i]<k1){
-                diff[i-1]+=diff[i];
-                k1-=diff[i];
-                diff[i]=0;
+
+        for(int i = (int)1e5 ; i >= 1;i--){
+
+            if(map[i] > operations){
+                map[i - 1] += operations;
+                map[i] -= operations;
+                operations = 0;
+                break;
             }else{
-                diff[i-1] += k1;
-                diff[i] -= k1;
-                k1=0;
+                map[i - 1] += map[i];
+                operations -= map[i];
+                map[i] = 0;
             }
         }
-        for(int i=max ; i>0 ; i--) ans += diff[i]*(long)i*i;
-        return ans;
+
+        long sum = 0;
+
+        for(int i = 0;i<=(int)1e5;i++){
+            sum += (i * 1L * i * 1L * map[i]);
+        }
+
+        return sum;
     }
 }
